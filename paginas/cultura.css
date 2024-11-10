@@ -1,0 +1,229 @@
+@import "./global.css";
+
+:root {
+    font-size: 62.5%;
+
+    --laranja: #d7460c;
+    --branco: #fafafa;
+    --vermelho-escuro: #630506;
+    --cinza-escuro: #232323;
+}
+
+
+body {
+    font-family: "Lora", serif;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+}
+
+.primeiraParte{
+    display: flex;
+    margin: 3rem;
+}
+
+.primeiraParte img{
+    max-width: 90rem;
+    margin-bottom: 7rem;
+}
+
+.primeiraParte h1{
+    font-size: 4.0rem;
+    font-style: normal;
+    color: var(--vermelho-escuro);
+}
+
+.conteudoPrimeira{
+    max-width: 60rem;
+    font-size: 2.5rem;
+    margin-inline: 9rem;
+}
+
+.conteudoPrimeira h1{
+    margin-block: 5rem;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.segundaParte img{
+    width: 160rem;
+    max-width: 200rem;
+    margin-inline: 3rem;
+
+}
+
+.segundoConteudo h2{
+    margin-block: 3rem;
+    margin-inline: 9rem; 
+    font-size: 3.0rem;
+    color: var(cinza-escuro);
+}
+
+.segundoConteudo p{
+    font-size: 2.5rem;
+    margin-inline: 9rem; 
+    margin-bottom: 7.5rem;
+    max-width: 200rem;
+    font-family: "Playfair Display", serif;
+   
+}
+
+.terceiraParte {
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+   
+}
+
+.terceiraParte img {
+    width: 85rem;
+    margin-inline: 3rem;
+    max-height: 100rem;
+}
+
+.gostouconteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.gostouconteudo h2 {
+    font-family: "Playfair Display", serif; 
+    font-size: 5.5rem;
+    color: var(--vermelho-escuro);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.gostouconteudo-container {
+    display: flex;
+    gap: 3rem; 
+    justify-content: center;
+}
+
+.turismo, .historia {
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.turismo {
+    background-color: var(--vermelho-escuro);
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.turismo img {
+    width: 30rem; 
+    height: 30rem;
+    margin: none;
+    
+}
+
+.turismo h1{
+    font-family: "Playfair Display", serif;
+}
+
+.turismo p{
+    font-family: "Lora", serif; 
+}
+
+.turismo h1, .turismo p {
+    color: var(--branco);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.turismo a.saibaTurismo {
+    background-color: var(--branco);
+    color: var(--laranja);
+    border-radius: 15px;
+    padding: 1.5rem 3rem;
+    font-size: 2rem; 
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.turismo a.saibaTurismo:hover {
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    border: var(--branco) 2px solid;
+}
+
+.historia {
+    background-color: var(--laranja);
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.historia img {
+    width: 30rem;
+    height: 30rem;
+    margin: none;
+}
+
+.historia h1, .historia p {
+    color: var(--branco);
+    text-align: center;
+    margin: 1rem 0;
+    font-family: "Playfair Display", serif;
+}
+
+.historia p {
+    font-family: "Lora", serif;
+}
+
+.historia a.saibaHistoria {
+    background-color: var(--branco);
+    color: var(--laranja);
+    border-radius: 15px;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.historia a.saibaHistoria:hover {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: var(--branco) 2px solid;
+}
+
+.gostouconteudo{
+    display: flex;
+    margin-inline: auto;
+}

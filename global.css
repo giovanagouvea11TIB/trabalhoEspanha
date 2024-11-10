@@ -1,0 +1,94 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Lora", serif; 
+    font-style: normal;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --laranja: #d7460c;
+    --branco: #fafafa;
+    --vermelho-escuro: #630506;
+    --cinza-escuro: #232323;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--laranja);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 6rem;
+    height: 6rem;
+     
+}
+
+header ul {
+    display: flex;
+    gap: 6rem;
+    list-style: none;
+    margin-left: auto;  
+}
+
+header li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav a {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a .espanha {
+    justify-content: flex-start;
+    display: block;
+}
+
+header ul li:not(.botaoCadastro) a {
+    margin-right: 1rem;
+}
+
+.botaoCadastro a {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--branco);
+    color: var(--laranja);
+    border-radius: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    header div:hover,
+    header li:hover {
+    transform: scale(1);
+    font-weight: 700;
+    transition: .5s;
+}
+
+.botaoCadastro a:hover {
+    background-color: transparent;
+    transition: .5s;
+    color: var(--branco);
+    border: var(--branco) solid 2px;
+}
