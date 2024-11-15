@@ -9,9 +9,9 @@
     --cinza-escuro: #232323;
 }
 
-
 body {
     font-family: "Lora", serif;
+    height: 100vh;
 }
 
 h1 {
@@ -23,62 +23,65 @@ h2 {
     font-family: "Playfair Display", serif;
 }
 
-.primeiraParte{
-    display: flex;
-    margin: 3rem;
+.primeiraParte img {
+    margin-top: 5rem;
+    width: 162rem;
+    margin-inline: 3.5rem;
 }
 
-.primeiraParte img{
-    max-width: 90rem;
-    margin-bottom: 7rem;
+.primeiroConteudo {
+    margin-inline: 3.4rem;
 }
 
-.primeiraParte h1{
+.primeiroConteudo h1 {
+    margin-block: 3rem;
     font-size: 4.0rem;
-    font-style: normal;
+    font-weight: 400;
+    margin-inline: 5rem;
     color: var(--vermelho-escuro);
 }
 
-.conteudoPrimeira{
-    max-width: 60rem;
+.primeiroConteudo p {
     font-size: 2.5rem;
-    margin-inline: 9rem;
+    margin-inline: 5rem; 
+    margin-bottom: 7.5rem;
+    max-width: 180rem;
+    font-family: "Lora", serif;
 }
 
-.conteudoPrimeira h1{
-    margin-block: 5rem;
-    font-family: "Montserrat", sans-serif;
-    
-}
-
-.segundaParte img{
-    width: 160rem;
+.containerElementos {
+    display: flex;
+    margin-top: 16rem;
+    margin-inline: 3.4rem;
     max-width: 200rem;
-    margin-inline: 3rem;
-
 }
 
-.segundoConteudo h2{
-    margin-block: 3rem;
-    margin-inline: 9rem; 
-    font-size: 3.0rem;
-    color: var(cinza-escuro);
+.imagemContainer {
+    display: flex;
+    max-width: 80rem; 
+    height: 155rem; 
 }
 
-.segundoConteudo p{
+.segundoConteudo h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    margin-inline: 4.6rem;
+    margin-bottom: 3rem;
+}
+
+.segundoConteudo p {
     font-size: 2.5rem;
-    margin-inline: 9rem; 
+    margin-inline: 5rem; 
     margin-bottom: 7.5rem;
     max-width: 200rem;
-    font-family: "Playfair Display", serif;
-   
+    font-family: "Lora", serif;
 }
 
 .terceiraParte {
     display: flex;
     align-items: center;
     margin: 3rem;
-   
+    margin-top: 19rem;
 }
 
 .terceiraParte img {
@@ -123,28 +126,19 @@ h2 {
 
 .turismo {
     background-color: var(--vermelho-escuro);
-    width: 30rem;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 3rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .turismo img {
     width: 30rem; 
     height: 30rem;
     margin: none;
-    
 }
 
-.turismo h1{
+.turismo h1 {
     font-family: "Playfair Display", serif;
 }
 
-.turismo p{
+.turismo p {
     font-family: "Lora", serif; 
 }
 
@@ -176,14 +170,6 @@ h2 {
 
 .historia {
     background-color: var(--laranja);
-    width: 30rem;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 3rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .historia img {
@@ -223,7 +209,56 @@ h2 {
     border: var(--branco) 2px solid;
 }
 
-.gostouconteudo{
-    display: flex;
-    margin-inline: auto;
+
+@media (max-width: 1024px) {
+    .primeiraParte img {
+        width: 100%;
+        max-width: 95rem;
+    }
+
+    .primeiroConteudo h1, .primeiroConteudo p {
+        margin-inline: 2rem;
+    }
+
+    .containerElementos {
+        flex-direction: column;
+    }
+
+    .imagemContainer {
+        width: 100%;
+        max-width: 95rem;
+    }
+
+    .terceiraParte {
+        flex-direction: column;
+    }
+
+    .terceiraParte img {
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    .turismo, .historia {
+        width: 100%;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 50%; /
+    }
+
+    .primeiroConteudo h1 {
+        font-size: 3rem;
+    }
+
+    .gostouconteudo h2 {
+        font-size: 3.5rem;
+    }
+
+    .turismo img, .historia img {
+        width: 100%;
+        max-width: 25rem;
+    }
 }
